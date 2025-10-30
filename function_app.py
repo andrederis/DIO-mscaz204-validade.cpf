@@ -33,7 +33,7 @@ def validate_cpf(req: func.HttpRequest) -> func.HttpResponse:
 
     if not cpf:
         return func.HttpResponse(
-            '{"ok": false, "error": "Parâmetro cpf é obrigatório"}',
+            '{"ok": false, "error": "Parâmetro CPF é obrigatório"}',
             mimetype="application/json",
             status_code=400,
         )
